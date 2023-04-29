@@ -1,0 +1,66 @@
+#code-editor {
+    -webkit-user-modify: read-write-plaintext-only;
+    resize: none;
+    border: none;
+    outline: none;
+    white-space: pre-wrap;
+    font-size: 1rem;
+    width: 92vw;
+    height: 83vh;
+    font-family: 'Fira Code', consolas, 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+html {
+    background-color: rgb(39, 39, 39);
+}
+
+/* HIGHLIGHT */
+::highlight(built_in) {
+    color: darkcyan;
+}
+
+::highlight(comment) {
+    color: #a0a1a7;
+    font-style: italic;
+}
+
+::highlight(number),
+::highlight(selector-class) {
+    color: #ffae00;
+}
+
+/*::highlight(attr) {
+    color: #;
+}*/
+
+::highlight(string) {
+    color: #50a14f;
+}
+
+::highlight(selector-pseudo) {
+    color: #b720c5;
+}
+
+::highlight(attribute) {
+    color: #00ffea;
+}
+
+::highlight(keyword) {
+    color: #a626a4;
+}
+
+::highlight(selector-id) {
+    color: #13a0f1
+}
+::highlight(type){
+    color:gold
+}
+::highlight(variable){
+    color: rgb(231, 64, 64);
+}
+::highlight(title-function),::highlight(title-function-invoke){
+    color: #13a0f1;
+}
+::highlight(selector-tag){
+    color: rgb(231, 64, 64);
+}
